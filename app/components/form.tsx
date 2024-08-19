@@ -2,12 +2,12 @@
 
 import React from "react";
 import { FormBuilder } from "@spiraai/spira-form";
-import { formSchema } from "../schema/formSchema";
+import { ebikeFormSchema, formSchema } from "../schema/formSchema";
 
 const Form: React.FC = () => {
   return (
     <div>
-      <FormBuilder schema={formSchema} />
+      <FormBuilder schema={ebikeFormSchema} />
     </div>
   );
 };
