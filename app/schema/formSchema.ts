@@ -225,3 +225,101 @@ export const ebikeFormSchema = {
     },
   ],
 };
+
+export const qaFormSchema = {
+  "title": "QA Tester Application Form",
+  "description": "Please fill out this form to apply for the QA Tester position",
+  "fields": [
+      {
+          "type": "text",
+          "label": "Full Name",
+          "name": "fullName",
+          "placeholder": "John Doe"
+      },
+      {
+          "type": "email",
+          "label": "Email Address",
+          "name": "email",
+          "required": true
+      },
+      {
+          "type": "tel",
+          "label": "Phone Number",
+          "name": "phoneNumber",
+          "placeholder": "123-456-7890"
+      },
+      {
+          "type": "textarea",
+          "label": "Summary of Experience",
+          "name": "summaryExperience",
+          "placeholder": "Briefly describe your QA testing experience and skills"
+      },
+      {
+          "type": "select",
+          "label": "Preferred Programming Languages",
+          "name": "preferredLanguages",
+          "options": [
+              {
+                  "label": "Java",
+                  "value": "java"
+              },
+              {
+                  "label": "Python",
+                  "value": "python"
+              },
+              {
+                  "label": "C#",
+                  "value": "csharp"
+              },
+              {
+                  "label": "Other (please specify)",
+                  "value": "other"
+              }
+          ]
+      },
+      {
+          "type": "checkbox",
+          "label": "Certifications",
+          "name": "certifications",
+          "options": [
+              {
+                  "label": "ISTQB",
+                  "value": "istqb"
+              },
+              {
+                  "label": "CSTE",
+                  "value": "cste"
+              },
+              {
+                  "label": "Other (please specify)",
+                  "value": "other"
+              }
+          ]
+      },
+      {
+          "type": "radio",
+          "label": "Availability",
+          "name": "availability",
+          "options": [
+              {
+                  "label": "Full-time",
+                  "value": "fulltime"
+              },
+              {
+                  "label": "Part-time",
+                  "value": "parttime"
+              },
+              {
+                  "label": "Contract",
+                  "value": "contract"
+              }
+          ]
+      },
+      {
+          "type": "file",
+          "label": "Resume",
+          "name": "resume",
+          "accept": ".pdf, .docx"
+      }
+  ]
+}
